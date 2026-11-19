@@ -31,7 +31,7 @@ function Auth({ isModel = false }) {
         { withCredentials: true }
       )
 
-      dispatch(setUserData(result.data))
+      dispatch(setUserData(result.data.user))
 
       console.log(result.data)
 
